@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple login form</title>
+    <!-- <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet"> -->
+    <style>
+        html,
+        body {
+            /* display: flex; */
+            justify-content: center;
+            font-family: Roboto, Arial, sans-serif;
+            font-size: 15px;
+            color: white;
+            padding-top: 40px;
+            background-image: url('bg.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+        }
+
+        .boder {
+            border: 1px solid #73fff8;
+        }
+
+        form {
+            border: 5px solid #73fff8;
+            border-radius: 50px;
+        }
+
+
+        input[type=text],
+        input[type=password] {
+            width: 100%;
+            padding: 16px 8px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: rgba(96, 255, 255, 0.4);
+            color: white;
+            padding: 14px 0;
+            margin: 10px 0;
+            border: none;
+            cursor: grabbing;
+            width: 40%;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 18;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .formcontainer {
+            text-align: left;
+            margin: 24px 150px 12px;
+        }
+
+        .container {
+            padding: 0px 0;
+            text-align: center;
+        }
+
+        span.psw {
+            float: right;
+            padding-top: 0;
+            padding-right: 15px;
+        }
+
+        #octagon {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: relative;
+        }
+
+        #octagon:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            border-bottom: 29px solid red;
+            border-left: 29px solid #eee;
+            border-right: 29px solid #eee;
+            width: 42px;
+            height: 0;
+        }
+
+        #octagon:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            border-top: 29px solid red;
+            border-left: 29px solid #eee;
+            border-right: 29px solid #eee;
+            width: 42px;
+            height: 0;
+        }
+
+        /* Change styles for span on extra small screens */
+        @media screen and (max-width: 300px) {
+            span.psw {
+                display: block;
+                float: none;
+            }
+    </style>
+</head>
+
+<body>
+    <hr class="boder" style="margin-bottom: 50px;" />
+    <div class="box">
+        <form action="submit.php" method="post">
+            <h1>ENTER YOUR NAME</h1>
+            <div class="formcontainer">
+                <div class="container">
+                    <input type="text" placeholder="ENTER YOUR NAME" name="nama" required style="margin-bottom: 20px;">
+                    <button type="submit">YES</button>&nbsp;
+                    <button type="reset">CANCEL</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <hr class="boder" style="margin-top: 50px;" />
+</body>
+</html>
