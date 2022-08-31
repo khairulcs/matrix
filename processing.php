@@ -71,7 +71,7 @@ function draw()
     for ( let i = 0 ; i < columns.length ; ++i )
     {
         // pick a random ascii character (change the 94 to a higher number to include more characters)
-        var randomCharacter = "Khairul";
+        var randomCharacter = "<?= $_GET['nama'] ?>";
         ctx.fillText( randomCharacter , columns[i].x , columns[i].stackCounter*tileSize+tileSize );
 
         // if the stack is at its height limit, pick a new random height and reset the counter

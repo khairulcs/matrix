@@ -8,7 +8,7 @@ if(file_exists($path)):
 	$contents = "$nama\n";
 	fwrite($fh, $contents);
 	fclose($fh);
-	header("Location: processing.php");
+	header("Location: processing.php?nama=$nama");
 else:
 
 	echo 'does not exist';
