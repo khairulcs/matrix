@@ -1,5 +1,5 @@
 <html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Name submitted</title>
+<title>SMEC - Processing</title>
 <script>
 var tileSize = 80;
 var fadeFactor = 1.4;
